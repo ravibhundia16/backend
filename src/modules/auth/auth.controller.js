@@ -62,10 +62,14 @@ const login = async (req, res) => {
     // * Generate token
     const token = await createToken(userData.id)
 
+    const userResponse = {
+      token,
+      ...userData.get(),
+    }
+
     return res
-      .setHeader('token', token)
       .status(constants.HTTP_STATUS_CODE_200)
-      .json(successResponse(constants.HTTP_STATUS_CODE_200, userData, messages.SUCCESS_LOGIN))
+      .json(successResponse(constants.HTTP_STATUS_CODE_200, userResponse, messages.SUCCESS_LOGIN))
   } catch (error) {
     logger.error('# Error while login user in AuthController -> login -> catch:')
     logger.error(error)

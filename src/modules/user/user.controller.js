@@ -34,7 +34,7 @@ const updateUserById = async (req, res) => {
       },
     }
 
-    const updatedUser = await userService.update(query, req.body.user)
+    const updatedUser = await userService.update(query, req.body)
 
     return res
       .status(constants.HTTP_STATUS_CODE_200)

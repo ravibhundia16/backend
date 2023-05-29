@@ -15,7 +15,7 @@ const routes = (router) => {
   router.route('/user/:userid').delete(authMiddleWare.authorizeToken, userController.deleteUserById)
 
   // * Get all users
-  router.route('/getAll').get(authMiddleWare.authorizeToken, userController.getAllUsers)
+  router.route('/getAllUsers').get(authMiddleWare.authorizeToken, userController.getAllUsers)
 
   return { router: router, apiPrefix: '/v1' }
 }
