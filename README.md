@@ -34,3 +34,13 @@ This repository uses v18.15.0 of Node and v9.5.0 version of npm
   For Ex:
   - If file is use for routes than name ends with `.route.js` or `.route.ts`
   - If file is use for controller functiopn than name ends with `.controller.js` or `.controller.ts`
+
+# Project Bootstraping
+
+This branch contains below things
+- Create node server
+- Project structure
+- Database connection with sequelize
+- Code formatting rules with eslint and prettier
+- Pre-commit validation using husky
+- Logging machanism

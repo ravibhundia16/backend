@@ -1,0 +1,45 @@
+{
+  "name": "js_nosql_boilerplate",
+  "version": "1.0.0",
+  "description": "This repository is created for Node boilerplate with JS and NoSQL",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravibhundia16/backend.git"
+  },
+  "keywords": [
+    "Node",
+    "Javascript",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Ravi Bhundia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravibhundia16/backend/issues"
+  },
+  "homepage": "https://github.com/ravibhundia16/backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "mongoose": "^7.2.3",
+    "morgan": "^1.10.0",
+    "winston": "^3.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8"
+  }
+}
